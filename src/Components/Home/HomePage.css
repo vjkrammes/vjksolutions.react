@@ -1,0 +1,84 @@
+.banner {
+  height: 5rem;
+  background-color: var(--gray2);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannertext {
+  text-align: center;
+  font-family: 'Roboto Slab', 'Times New Roman', serif;
+  font-size: 1rem;
+}
+
+.narrativetitle {
+  margin-top: 1rem;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid var(--black-color);
+  border-radius: 35px;
+  background-color: var(--pop-color2);
+}
+
+.services {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 260px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  display: grid;
+  justify-content: center;
+  padding: 5px 10px;
+  width: auto;
+  cursor: pointer;
+}
+
+.service:hover {
+  border: 1px solid var(--pop-color1);
+  border-radius: 5px;
+}
+
+.service img {
+  max-width: 250px;
+}
+
+.servicetag {
+  margin-top: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .bannertext {
+    font-size: 2rem;
+  }
+
+  .narrativetitle {
+    padding: 1rem 2rem;
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .banner {
+    height: 10rem;
+  }
+
+  .bannertext {
+    font-size: 3rem;
+  }
+}

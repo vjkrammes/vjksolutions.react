@@ -1,0 +1,173 @@
+.h__container {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.h__logo {
+  text-decoration: none;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.h__logoimage {
+  height: 2rem;
+  filter: invert(1);
+}
+
+.h__logo span {
+  font-size: 75%;
+}
+
+/* navbar styles here */
+/* based on code by Kevin Powell in this video: https://youtu.be/8QKOaTYvYUA */
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: var(--black-color);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  z-index: 1000;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+nav a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--pop-color2);
+  background-color: var(--light-color);
+}
+
+.h__navtoggle {
+  display: none;
+}
+
+.h__navtoggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.h__navtoggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.h__navtogglelabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.h__navtogglelabel span,
+.h__navtogglelabel span::before,
+.h__navtogglelabel span::after {
+  display: block;
+  background-color: var(--white-color);
+  height: 2px;
+  width: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+
+.h__navtogglelabel span::before,
+.h__navtogglelabel span::after {
+  content: '';
+  position: absolute;
+}
+
+.h__navtogglelabel span::before {
+  bottom: 7px;
+}
+
+.h__navtogglelabel span::after {
+  top: 7px;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    all: unset;
+    margin-right: 1rem;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav li {
+    margin-left: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: var(--pop-color2);
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 150ms;
+  }
+
+  nav a:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  .h__navtogglelabel {
+    display: none;
+  }
+}
+
+/* Navbar ends */
