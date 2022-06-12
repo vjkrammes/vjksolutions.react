@@ -1,0 +1,23 @@
+.diw__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.diw__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.diw__label {
+  font-weight: 700;
+  min-width: 125px;
+}
+
+.diw__body {
+  padding: 5px;
+  font-style: italic;
+  margin-inline: 2rem;
+  border: 1px dotted var(--pop-color1);
+  border-radius: 10px;
+}

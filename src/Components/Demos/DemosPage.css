@@ -1,0 +1,39 @@
+.dp__item {
+  border: 1px dotted var(--black-color);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.dp__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 125%;
+  gap: 10px;
+  font-family: 'Righteous', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.dp__header img {
+  max-height: 32px;
+  max-width: 32px;
+}
+
+.dp__header span {
+  width: 100%;
+  border-bottom: 1px solid var(--pop-color1);
+}
+
+.dp__item p {
+  margin-top: 1rem;
+  margin-left: 40px;
+}
+
+.dp__moreinfo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 100;
+}

@@ -38,15 +38,16 @@
   padding: 5px 10px;
   width: auto;
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .service:hover {
   border: 1px solid var(--pop-color1);
-  border-radius: 5px;
 }
 
 .service img {
-  max-width: 250px;
+  max-height: 250px;
 }
 
 .servicetag {

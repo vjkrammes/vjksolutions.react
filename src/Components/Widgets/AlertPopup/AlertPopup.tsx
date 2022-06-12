@@ -28,7 +28,7 @@ export default function AlertPopup() {
           right: '10px',
           top: '10px',
           backgroundColor: 'var(--gray2)',
-          color: 'var(--black-color)',
+          color: 'var(--white-color)',
           fontSize: '1.25rem',
           lineHeight: '2rem',
           boxShadow: '3px 5px 5px rgb(0, 48, 90)',

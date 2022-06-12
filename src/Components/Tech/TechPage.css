@@ -1,0 +1,11 @@
+.tp__intro {
+  font-weight: 700;
+}
+
+.tp__outer li {
+  font-style: italic;
+}
+
+.tp__inner li {
+  font-style: normal;
+}

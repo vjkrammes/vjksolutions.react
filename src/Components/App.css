@@ -64,8 +64,8 @@
   --dark-accent: var(--gray3);
   --light-accent: var(--gray4);
   --base-color: var(--gray2);
-  --pop-color1: var(--hot-purple3);
-  --pop-color2: var(--hot-purple5);
+  --pop-color1: hsl(230.67 98.25% 55.1%);
+  --pop-color2: hsl(185.23 100% 52.75%);
   --black-color: rgb(0, 0, 35);
   --white-color: rgb(240, 240, 255);
 
@@ -311,7 +311,8 @@ form {
 
 .forminput[type='checkbox'] {
   max-width: 16px;
-  margin-inline: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
 }
 
 .forminput:disabled {
@@ -321,7 +322,7 @@ form {
 
 textarea {
   resize: none;
-  height: 100px;
+  height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
 }

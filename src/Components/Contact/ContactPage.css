@@ -1,0 +1,11 @@
+form {
+  margin-block: 2rem;
+}
+
+.formlabel {
+  min-width: 100px;
+}
+
+.buttoncontainer {
+  margin-top: 1rem;
+}

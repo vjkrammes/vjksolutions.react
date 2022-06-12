@@ -29,9 +29,9 @@
 
 nav {
   position: absolute;
-  text-align: left;
+  text-align: right;
   top: 100%;
-  left: 0;
+  right: 0;
   background-color: var(--black-color);
   width: 100%;
   transform: scale(1, 0);
@@ -48,7 +48,7 @@ nav ul {
 
 nav li {
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 nav a {

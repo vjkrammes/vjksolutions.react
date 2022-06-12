@@ -4,6 +4,14 @@
   gap: 1rem;
 }
 
+.db__container p {
+  margin-bottom: 1rem;
+}
+
+.db__container p:last-of-type {
+  margin-bottom: 0;
+}
+
 .db__header {
   padding: 1rem;
   border-bottom: 1px solid var(--pop-color1);

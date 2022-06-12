@@ -1,0 +1,16 @@
+.cs__container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.cs__swatch {
+  height: 1rem;
+  width: 50px;
+  border: 1px solid var(--black-color);
+}
+
+.cs__spaceleft {
+  margin-left: 10px;
+}

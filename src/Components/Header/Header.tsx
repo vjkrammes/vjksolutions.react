@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import { MdContactMail, MdHome, MdOutlineDescription } from 'react-icons/md';
+import {
+  MdComputer,
+  MdContactMail,
+  MdHome,
+  MdOutlineDescription,
+} from 'react-icons/md';
 import './Header.css';
 
 export default function Header() {
@@ -34,6 +39,13 @@ export default function Header() {
             <a href="/Demos">
               <span>
                 <MdOutlineDescription /> Demos
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/Tech">
+              <span>
+                <MdComputer /> Tech
               </span>
             </a>
           </li>

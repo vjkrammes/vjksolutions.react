@@ -1,0 +1,21 @@
+.ap__item {
+  margin-bottom: 1rem;
+}
+
+.ap__item::before {
+  content: '♦';
+  margin-right: 10px;
+}
+
+.ap__item a {
+  text-decoration: none;
+  color: var(--pop-color1);
+  border: 1px solid var(--black-color);
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
+.ap__item a:hover {
+  background-color: var(--dark-color);
+  color: var(--pop-color2);
+}
