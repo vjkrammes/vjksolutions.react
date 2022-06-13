@@ -5,6 +5,7 @@ import { MdClear, MdEmail, MdHome } from 'react-icons/md';
 import './ContactPage.css';
 import { IEmailModel } from '../../Interfaces/IEmailModel';
 import { http } from '../../Services/http';
+import { FaEnvelope } from 'react-icons/fa';
 
 type FormData = {
   name: string;
@@ -232,7 +233,7 @@ export default function ContactPage() {
               type="text"
               id="timezone"
               {...register('timezone')}
-              placeholder="Enter your time zone or offset from UTC for contact via Text or Phone"
+              placeholder="Enter your time zone or UTC offset"
             />
           </div>
           <div className="buttoncontainer">
@@ -262,6 +263,15 @@ export default function ContactPage() {
             </button>
           </div>
         </form>
+        <div className="cp__mailcontact">
+          <div className="cp__mc__header">
+            <FaEnvelope /> Via Mail <FaEnvelope />
+          </div>
+          <div className="cp__mc__line1">VJK Solutions, LLC</div>
+          <div className="cp__mc__line2">9200 NW 39th Avenue</div>
+          <div className="cp__mc__line3">Suite 130-3218</div>
+          <div className="cp__mc__line4">Gainesville, FL, 32606-3083</div>
+        </div>
       </div>
     </div>
   );
