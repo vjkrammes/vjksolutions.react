@@ -47,6 +47,10 @@ export default function ContactPage() {
       callOk: false,
       timezone: '',
     });
+    const name = document.getElementById('name');
+    if (name) {
+      name.focus();
+    }
   }
   async function formSubmitted(data: FormData) {
     if (
@@ -57,6 +61,14 @@ export default function ContactPage() {
       !data.details
     ) {
       setAlert('All fields marked with a red star are required', 'error', 5000);
+      return;
+    }
+    if ((!data.phone || !data.timezone) && (data.callOk || data.smsOk)) {
+      setAlert(
+        'Please provide a phone number and time zone when selecting contact via call or SMS',
+        'error',
+        5000,
+      );
       return;
     }
     const model: IEmailModel = {
@@ -117,6 +129,7 @@ export default function ContactPage() {
               className="forminput"
               type="text"
               id="name"
+              autoFocus
               {...register('name')}
               placeholder="Name"
             />

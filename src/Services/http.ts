@@ -1,4 +1,5 @@
-const APIBASE = 'https://vjksolutionsapi.azurewebsites.net';
+const APIBASE = 'https://vjksolutionsapi.azurewebsites.net/api/v2';
+// const APIBASE = 'https://localhost:5001/api/v2';
 
 export interface HttpRequest<TRequest> {
   path: string;
