@@ -56,6 +56,17 @@
   text-align: center;
 }
 
+@media (hover: none) {
+  .servicetag {
+    text-decoration: none;
+    background-color: var(--primarybutton-background);
+    color: var(--primarybutton-color);
+    padding: 3px 5px;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .bannertext {
     font-size: 2rem;
