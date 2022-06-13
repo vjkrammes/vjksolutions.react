@@ -25,8 +25,12 @@ export default function TechPage() {
           <li>
             Full Stack Web
             <ul className="tp__inner">
-              <li>ASP.Net Core Blazor (C#)</li>
+              <li>ASP.Net Core Server-side Blazor (C#)</li>
               <li>ASP.Net Core MVC (Model-View-Controller) (C#)</li>
+              <li>
+                React front end (TypeScript/JavaScript) with ASP.Net Core API
+                back end (C#)
+              </li>
               <li>PHP</li>
             </ul>
           </li>
@@ -44,7 +48,6 @@ export default function TechPage() {
                 React (specifically React functional components and hooks)
                 (TypeScript/JavaScript)
               </li>
-              <li>Blazor WebAssembly (C#)</li>
               <li>Angular (TypeScript/JavaScript)</li>
             </ul>
           </li>

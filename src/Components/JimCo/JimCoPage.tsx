@@ -42,7 +42,7 @@ export default function JimCoPage() {
         <HideWidget label="API" content="Back-end API">
           <DemoItemWidget
             name="JimCo API"
-            repo="https://github.com/JimCo.api"
+            repo="https://github.com/JimCo.API"
             url="https://jimcoapi.azurewebsites.net"
             authScheme="Bearer Tokens (JWT)"
             cicd="Azure DevOps"
