@@ -149,7 +149,7 @@ export default function JimCoPage() {
           >
             The Vendor portal allows vendors to edit their contact information,
             set item costs (within limits), and adjust reorder amounts for their
-            products (within limts)
+            products (within limits)
           </DemoItemWidget>
         </HideWidget>
       </div>

@@ -62,8 +62,12 @@
     background-color: var(--primarybutton-background);
     color: var(--primarybutton-color);
     padding: 3px 5px;
-    border: 1px solid var(--black-color);
-    border-radius: 5px;
+    border-top: 3px solid var(--gray6);
+    border-left: 3px solid var(--gray6);
+    border-bottom: 3px solid var(--gray3);
+    border-right: 3px solid var(--gray3);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px var(--gray2);
   }
 }
 
