@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import { MdHome, MdInfo } from 'react-icons/md';
+import { MdHome } from 'react-icons/md';
+import { FaInfo } from 'react-icons/fa';
 import './DemosPage.css';
 
 export default function DemosPage() {
@@ -46,7 +47,7 @@ export default function DemosPage() {
             onClick={() => navigate('/JimCo')}
             title="More Information"
           >
-            <MdInfo />
+            <FaInfo />
           </button>
         </div>
         <div className="dp__item">
@@ -73,6 +74,37 @@ export default function DemosPage() {
             The code repository can be found{' '}
             <a
               href="https://github.com/vjkrammes/ledger8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+          </p>
+        </div>
+        <div className="dp__item">
+          <div className="dp__header">
+            <img src="/images/xtrakrlogo-64.png" alt="XTrakr" />{' '}
+            <span>XTrakr</span>
+          </div>
+          <p>
+            A desktop application used to track expenses:
+            <ul>
+              <li>Payees</li>
+              <li>Payment Categories</li>
+              <li>Payment amounts, dates, references</li>
+            </ul>
+          </p>
+          <p>
+            XTrakr is written in C# and uses a Microsoft SQL database to store
+            its data.
+          </p>
+          <p>
+            It uses Windows Presentation Foundation (WPF) for its user interface
+          </p>
+          <p>
+            The code repository can be found{' '}
+            <a
+              href="https://github.com/vjkrammes/XTrakr"
               target="_blank"
               rel="noreferrer"
             >
