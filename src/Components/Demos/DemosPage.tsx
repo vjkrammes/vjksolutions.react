@@ -47,7 +47,9 @@ export default function DemosPage() {
             onClick={() => navigate('/JimCo')}
             title="More Information"
           >
-            <FaInfo />
+            <span>
+              <FaInfo />
+            </span>
           </button>
         </div>
         <div className="dp__item">

@@ -37,3 +37,9 @@
   right: 5px;
   z-index: 100;
 }
+
+.dp__moreinfo span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
