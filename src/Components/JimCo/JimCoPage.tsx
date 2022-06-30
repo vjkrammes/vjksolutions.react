@@ -42,7 +42,7 @@ export default function JimCoPage() {
         <HideWidget label="API" content="Back-end API">
           <DemoItemWidget
             name="JimCo API"
-            repo="https://github.com/JimCo.API"
+            repo="https://github.com/vjkrammes/JimCo.API"
             url="https://jimcoapi.azurewebsites.net"
             authScheme="Bearer Tokens (JWT)"
             cicd="Azure DevOps"
@@ -64,7 +64,7 @@ export default function JimCoPage() {
         <HideWidget label="Retail" content="Retail web site">
           <DemoItemWidget
             name="Retail Web Site"
-            repo="https://github.com/jimco.retailsite"
+            repo="https://github.com/vjkrammes/jimco.retailsite"
             url="https://jimcoretailsite.azurewebsites.net"
             authScheme="None"
             cicd="Azure Devops"
@@ -95,7 +95,7 @@ export default function JimCoPage() {
         <HideWidget label="Portal" content="Employee portal">
           <DemoItemWidget
             name="Employee Portal"
-            repo="https://github.com/jimco.employeeportal"
+            repo="https://github.com/vjkrammes/jimco.employeeportal"
             url="https://jimoemployeeportal.azurewebsites.net"
             authScheme="Auth0"
             cicd="Azure Devops"
@@ -132,7 +132,7 @@ export default function JimCoPage() {
         <HideWidget label="Portal" content="Vendor portal">
           <DemoItemWidget
             name="Vendor Portal"
-            repo="https://github.com/jimco.vendorportal"
+            repo="https://github.com/vjkrammes/jimco.vendorportal"
             url="https://jimcovendorportal.azurewebsites.net"
             authScheme="Auth0"
             cicd="Azure Devops"
