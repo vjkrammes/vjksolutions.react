@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AlertProvider } from '../Contexts/AlertContext';
 // Pages
 import AboutPage from './About/AboutPage';
+import BeansPage from './Beans/BeansPage';
 import ContactPage from './Contact/ContactPage';
 import DemosPage from './Demos/DemosPage';
 import HomePage from './Home/HomePage';
@@ -46,6 +47,7 @@ export default function App() {
                 }
               />
               <Route path="/About" element={<AboutPage />} />
+              <Route path="/Beans" element={<BeansPage />} />
               <Route
                 path="/Contact"
                 element={

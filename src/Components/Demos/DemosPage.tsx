@@ -21,6 +21,37 @@ export default function DemosPage() {
       <div className="content">
         <div className="dp__item">
           <div className="dp__header">
+            <img src="/images/beanslogo-64.png" alt="Beans Logo" />{' '}
+            <span>Beans</span>
+          </div>
+          <p>
+            A demonstration app that works as a game modeling a commodities
+            market. Players can buy/sell/trade various colored beans between
+            themselves or <span className="theexchange">The Exchange</span>. It
+            consists of the following parts:
+            <ul>
+              <li>A Back-end API</li>
+              <li>A Front-end web page</li>
+              <li>An Azure function that updates bean prices nightly</li>
+            </ul>
+          </p>
+          <p>
+            The web site is written using React functional components and hooks,
+            and the API and function are written in C# using ASP.Net Core.
+          </p>
+          <p>The web site is responsive down to 375 pixels.</p>
+          <button
+            className="squarebutton dp__moreinfo"
+            onClick={() => navigate('/Beans')}
+            title="More Information"
+          >
+            <span>
+              <FaInfo />
+            </span>
+          </button>
+        </div>
+        <div className="dp__item">
+          <div className="dp__header">
             <img src="/images/jimcologo-64.png" alt="JimCo Logo" />{' '}
             <span>JimCo Retailers</span>
           </div>

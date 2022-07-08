@@ -16,7 +16,7 @@ export type ColorScheme = {
 type Props = {
   name: string;
   repo: string;
-  url: string;
+  url?: string;
   authScheme?: string;
   cicd?: string;
   colorScheme?: ColorScheme;
@@ -46,14 +46,16 @@ export default function DemoItemWidget({
           </a>
         </div>
       </div>
-      <div className="diw__item">
-        <div className="diw__label">URL</div>
-        <div className="diw__value">
-          <a href={url} target="_blank" rel="noreferrer">
-            {url}
-          </a>
+      {url && (
+        <div className="diw__item">
+          <div className="diw__label">URL</div>
+          <div className="diw__value">
+            <a href={url} target="_blank" rel="noreferrer">
+              {url}
+            </a>
+          </div>
         </div>
-      </div>
+      )}
       <div className="diw__item">
         <div className="diw__label">Authentication</div>
         <div className="diw__value">{authScheme || 'None'}</div>

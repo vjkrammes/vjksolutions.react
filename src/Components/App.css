@@ -93,6 +93,10 @@
   --font-size: '16px';
 }
 
+.theexchange {
+  font-family: Righteous, Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
 html,
 body {
   font-family: var(--font-family);

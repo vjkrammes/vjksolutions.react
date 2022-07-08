@@ -1,0 +1,28 @@
+.bp__intro {
+  margin-bottom: 1rem;
+}
+
+.bp__currency,
+.bp__beans {
+  font-weight: 700;
+}
+
+.diw__body p {
+  margin-bottom: 1rem;
+}
+
+.diw__body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.bp__spaced {
+  margin-inline: 1rem;
+}
+
+.bp__spaced p {
+  margin-bottom: 1rem;
+}
+
+.bp__spaced p:last-of-type {
+  margin-bottom: 0;
+}
