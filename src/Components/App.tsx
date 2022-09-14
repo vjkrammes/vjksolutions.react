@@ -4,6 +4,7 @@ import { AlertProvider } from '../Contexts/AlertContext';
 // Pages
 import AboutPage from './About/AboutPage';
 import BeansPage from './Beans/BeansPage';
+import CatalistPage from './Catalist/CatalistPage';
 import ContactPage from './Contact/ContactPage';
 import DemosPage from './Demos/DemosPage';
 import HomePage from './Home/HomePage';
@@ -48,6 +49,7 @@ export default function App() {
               />
               <Route path="/About" element={<AboutPage />} />
               <Route path="/Beans" element={<BeansPage />} />
+              <Route path="/Catalist" element={<CatalistPage />} />
               <Route
                 path="/Contact"
                 element={

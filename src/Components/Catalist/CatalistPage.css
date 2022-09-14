@@ -1,0 +1,20 @@
+.cat__installing li {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.cat__screenshot {
+  margin-top: 2rem;
+  height: 400px;
+}
+
+.cat__o__header {
+  margin-top: 1rem;
+}
+
+.cat__o__instructions {
+  margin-left: 10px;
+  font-family: 'Space Mono';
+  font-size: 1rem;
+  background-color: var(--faded-green);
+}

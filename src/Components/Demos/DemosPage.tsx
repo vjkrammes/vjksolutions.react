@@ -52,6 +52,50 @@ export default function DemosPage() {
         </div>
         <div className="dp__item">
           <div className="dp__header">
+            <img src="/images/catalistlogo.png" alt="Catalist Logo" />{' '}
+            <span>Catalist</span>
+          </div>
+          <p>
+            A native Android app, Catalist is a to-do list app with some twists:
+            <ul>
+              <li>
+                Items can be placed into categories. For example, a grocery list
+                might be grouped by the area of the store the items are found
+                in. Categories are optional, and categorized and uncategorized
+                items can be mixed within the same list.
+              </li>
+              <li>
+                Multple named lists are supported, each with a separate
+                (optional) list of categories.
+              </li>
+              <li>
+                Items can have an attached budget, can be assigned to another
+                person, and can have a due date.
+              </li>
+            </ul>
+          </p>
+          <p>
+            Catalist is written in <a href="https://kotlinlang.org/">Kotlin</a>{' '}
+            using{' '}
+            <a href="https://developer.android.com/jetpack/compose">
+              Jetpack Compose
+            </a>{' '}
+            for user interface composition. It is designed specifically for
+            phones in portrait orientation, but it will work on tablets or in
+            landscape orientation as well.
+          </p>
+          <button
+            className="squarebutton dp__moreinfo"
+            onClick={() => navigate('/Catalist')}
+            title="More Information"
+          >
+            <span>
+              <FaInfo />
+            </span>
+          </button>
+        </div>
+        <div className="dp__item">
+          <div className="dp__header">
             <img src="/images/jimcologo-64.png" alt="JimCo Logo" />{' '}
             <span>JimCo Retailers</span>
           </div>

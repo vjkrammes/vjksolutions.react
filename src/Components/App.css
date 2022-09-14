@@ -69,6 +69,7 @@
   --pop-color2: hsl(185.23 100% 52.75%);
   --black-color: rgb(0, 0, 35);
   --white-color: rgb(240, 240, 255);
+  --faded-green: hsl(112.2 75.53% 73.33% / 0.25);
 
   /* colors for primary and secondary buttons */
 
